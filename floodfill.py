@@ -8,7 +8,15 @@ board = [
     "....#............###..",
     "....##############....",
 ]
-
+board_1 = [
+    "##########",
+    "#........#",
+    "#..####..#",
+    "#..#..#..#",
+    "#..####..#",
+    "#........#",
+    "##########",
+]
 
 def flood_fill(input_board, old, new, x, y):
 
@@ -72,3 +80,7 @@ for a in modified_board:
 #~~~~###............#~~
 #~~~~#............###~~
 #~~~~##############~~~~
+
+modified_board = flood_fill(input_board=board_1, old=".", new="~", x=1, y=1)
+for a in modified_board:
+    print(a)
